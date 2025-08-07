@@ -19,27 +19,27 @@ Este projeto utiliza um Raspberry Pi Pico W para medir continuamente a distânci
 O projeto está organizado da seguinte forma para manter o código limpo e modular:
 
 /projeto_final/
-|-- sensor_distancia_laser.c                # Lógica principal e orquestração
-|-- sensor_distancia.c
-|-- sensor_distancia.h
-|-- display_oled.c
-|-- display_oled.h
-|-- lwipopts.h              # Configurações da pilha de rede
-|-- CMakeLists.txt          # Arquivo de build
-|
-|-- /inc/                   # Drivers do display OLED
-|   |-- ssd1306.h
-|   |-- ssd1306_font.h
-|   |-- ssd1306_i2c.c
-|   |-- ssd1306_i2c.h
-|
-|-- /src/                   # Módulos de comunicação
-|   |-- wifi_conn.c
-|   |-- wifi_conn.h
-|   |-- mqtt_comm.c
-|   |-- mqtt_comm.h
-|
-|-- /build/                 # Pasta gerada pela compilação
+|-- sensor_distancia_laser.c                # Lógica principal e orquestração|
+|-- sensor_distancia.c                                                       |
+|-- sensor_distancia.h                                                       |
+|-- display_oled.c                                                           |
+|-- display_oled.h                                                           |
+|-- lwipopts.h              # Configurações da pilha de rede                 |
+|-- CMakeLists.txt          # Arquivo de build                               |
+|                                                                            |
+|-- /inc/                   # Drivers do display OLED                        |
+|   |-- ssd1306.h                                                            |
+|   |-- ssd1306_font.h                                                       |
+|   |-- ssd1306_i2c.c                                                        |
+|   |-- ssd1306_i2c.h                                                        |
+|                                                                            |
+|-- /src/                   # Módulos de comunicação                         |
+|   |-- wifi_conn.c                                                          | 
+|   |-- wifi_conn.h                                                          |
+|   |-- mqtt_comm.c                                                          |
+|   |-- mqtt_comm.h                                                          |
+|                                                                            |
+|-- /build/                 # Pasta gerada pela compilação                   |
 
 ### Configuração do Ambiente
 Para compilar este projeto, você precisa ter o ambiente de desenvolvimento para o Raspberry Pi Pico configurado em sua máquina. Caso não tenha, siga o guia oficial:
