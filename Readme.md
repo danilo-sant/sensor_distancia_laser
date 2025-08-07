@@ -18,7 +18,7 @@ Este projeto utiliza um Raspberry Pi Pico W para medir continuamente a distânci
 ### Estrutura de Pastas
 O projeto está organizado da seguinte forma para manter o código limpo e modular:
 
-/projeto_final/
+|/projeto_final/                                                             |
 |-- sensor_distancia_laser.c                # Lógica principal e orquestração|
 |-- sensor_distancia.c                                                       |
 |-- sensor_distancia.h                                                       |
