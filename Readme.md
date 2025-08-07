@@ -49,6 +49,8 @@ Guia Oficial "Getting started with Raspberry Pi Pico"
 ### Configuração do Projeto
 Antes de compilar, você talvez precise ajustar as credenciais de rede e do broker MQTT diretamente no arquivo main.c:
 
+````
+```
 // sensor_distancia_laser.c
 
 // --- Configurações ---
@@ -62,23 +64,34 @@ const char *MQTT_CLIENT_ID = "pico_danilo_santos";
 const char *MQTT_USER = "desafio09";
 const char *MQTT_PASSWORD = "desafio09.laica";
 const char *MQTT_TOPIC = "ha/desafio09/danilo.santos/dist";
+```
+````
 
 ### Como Compilar e Executar
 1. Clone este repositório para a sua máquina.
 2. Abra um terminal na pasta raiz do projeto.
 
 3. Crie uma pasta de compilação (build):
-
+````
+```
 mkdir build
 cd build
+```
+````
 
 4. Execute o CMake para configurar o projeto:
-
+````
+```
 cmake ..
+```
+````
 
 5. Inicie a compilação com o Make:
-
+````
+```
 make
+```
+````
 
 6. Após a compilação, um arquivo projeto_final.uf2 será gerado dentro da pasta build.
 
